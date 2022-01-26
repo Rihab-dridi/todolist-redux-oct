@@ -11,7 +11,7 @@ export default function SelectTodo() {
   return (
     <div>
       <Form.Select aria-label="Default select example" onChange={filterTodo}>
-        <option>view</option>
+
         <option value="All">All</option>
         <option value="Done">Done</option>
         <option value="unDone">unDone</option>
