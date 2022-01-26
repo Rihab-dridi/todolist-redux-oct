@@ -2,7 +2,8 @@ import "./App.css";
 import AddTodo from "./components/addTodo";
 import TodoList from "./components/todoList";
 import { useState } from "react";
-import {Form  } from "react-bootstrap";
+import { Form } from "react-bootstrap";
+import SelectTodo from "./components/selectTodo";
 
 function App() {
   //step1: create the dynamic data
@@ -15,13 +16,12 @@ function App() {
   return (
     <div className="App">
       <h1>TODO APP!!</h1>
-      <AddTodo />
-      <Form.Select aria-label="Default select example">
-        <option>view</option>
-        <option value="1">All</option>
-        <option value="2">Done</option>
-        <option value="3">unDone</option>
-      </Form.Select>
+      {/* <div className="header" >
+        <AddTodo />
+        <SelectTodo />
+      </div> */}
+      <AddTodo/>
+      <SelectTodo/>
       <TodoList todos={todoList} />
     </div>
   );

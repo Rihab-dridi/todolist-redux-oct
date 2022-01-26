@@ -70,3 +70,7 @@ button{
   background-color: transparent;
   border: none;
 }
+.header{
+  display: flex;
+  justify-content: space-between;
+}
