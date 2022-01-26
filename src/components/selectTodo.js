@@ -10,7 +10,7 @@ export default function SelectTodo() {
   };
   return (
     <div>
-      <Form.Select aria-label="Default select example" onChange={filterTodo}>
+      <Form.Select aria-label="Default select example" className="select" onChange={filterTodo}>
 
         <option value="All">All</option>
         <option value="Done">Done</option>

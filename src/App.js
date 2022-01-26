@@ -16,12 +16,9 @@ function App() {
   return (
     <div className="App">
       <h1>TODO APP!!</h1>
-      {/* <div className="header" >
-        <AddTodo />
-        <SelectTodo />
-      </div> */}
-      <AddTodo/>
-      <SelectTodo/>
+
+      <AddTodo />
+
       <TodoList todos={todoList} />
     </div>
   );

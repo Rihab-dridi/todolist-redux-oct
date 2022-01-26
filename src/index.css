@@ -15,7 +15,7 @@ h3{
   padding-left: 20px;
 }
 input {
-  width: 80%;
+  width: 90%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
@@ -31,7 +31,7 @@ input:focus{
 }
 .todoBtns{
 padding-top: 0.5%;
-width: 7%;
+
 display: flex;
 justify-content: space-between;
 }
@@ -73,4 +73,16 @@ button{
 .header{
   display: flex;
   justify-content: space-between;
+}
+.addTodoContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 83%;
+  margin: auto;
+
+}
+.select{
+  background-color:#fcb69f ;
 }

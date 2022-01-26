@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addHandler } from "./redux/action";
+import SelectTodo from "./selectTodo";
 
 export default function AddTodo() {
   const [text, setText] = useState("");
@@ -20,11 +21,13 @@ export default function AddTodo() {
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
-
-      <button onClick={addTodo}>
-        {" "}
-        <i class="far fa-plus-square"></i>{" "}
-      </button>
+      <div className="header">
+        <button onClick={addTodo}>
+          {" "}
+          <i class="far fa-plus-square"></i>{" "}
+        </button>
+        <SelectTodo />
+      </div>
     </div>
   );
 }
